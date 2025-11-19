@@ -4,6 +4,10 @@
 
 code owasp-top-10-2025-labs.code-workspace
 
+## Références
+
+- [OWASP Top 10 2025 – Introduction](https://owasp.org/Top10/2025/0x00_2025-Introduction/)
+
 ## 📊 Matrice globale — OWASP Top 10 (2025)
 
 Cette matrice reflète l’avancement des PoC vulnérables et sécurisés pour chaque CWE lié à l’OWASP Top 10:2025.
