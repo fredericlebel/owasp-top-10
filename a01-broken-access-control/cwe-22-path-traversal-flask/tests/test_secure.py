@@ -2,13 +2,19 @@ import pytest
 from app_secure import create_app
 
 TRAVERSAL_PAYLOADS = [
+    # traversal simples avec le répertoire parent
     "/download/../.env",
     "/download/../../app_vulnerable.py",
     "/download/../../../config.json",
+    # traversal encodés en URL (%2e%2e)
     "/download/%2e%2e/%2e%2e/.env",
     "/download/%2e%2e/app_vulnerable.py",
+    # traversal avec doubleslash
     "/download/..//..//config.json",
+    # traversal avec double encodage (%252e%252e)
     "/download/%252e%252e/%252e%252e/.env",
+    # traversal obfusqués avec des points supplémentaires
+    "/download/....//..//.env",
     "/download/....//..//..//pyproject.toml",
 ]
 
