@@ -1,0 +1,39 @@
+{
+  "folders": [
+    {
+      "name": "🏠 Monorepo Root",
+      "path": "."
+    },
+    {
+      "name": "📦 CWE-22: Path Traversal Flask",
+      "path": "./a01-broken-access-control/cwe-22-path-traversal-flask"
+    },
+    {
+      "name": "🎨 CWE-200: Exposure of Sensitive Information to an Unauthorized Actor Flask",
+      "path": "./a01-broken-access-control/cwe-200-exposure-of-sensitive-information-to-an-unauthorized-actor-flask"
+    },
+    {
+      "name": "🌐 CWE-639: Authorization Bypass Through User-Controlled Key",
+      "path": "./a01-broken-access-control/cwe-639-authorization-bypass-through-user-controlled-key-flask"
+    },
+    {
+      "name": "🔧 CWE-1275 Sensitive Cookie with Improper SameSite Attribute",
+      "path": "./a01-broken-access-control/cwe-1275-sensitive-cookie-with-improper-samesite-attribute-flask"
+    }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.linting.ruffEnabled": true,
+    "python.formatting.provider": "ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "files.exclude": {
+      "**/.git": true,
+      "**/.venv": true,
+      "**/__pycache__": true
+    }
+  }
+}
